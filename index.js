@@ -20,6 +20,7 @@ app.get('/', (req, res)=>{
     res.render('home')
 })
 
+
 app.get('/products', (req, res) =>{
 
     const products =[
@@ -29,6 +30,7 @@ app.get('/products', (req, res) =>{
             description: 'Very beautiful product',
             size: 'M-G',
             title: 'Hat',
+            id: '1'
         },
         {
             img: "/img/shirt.png",
@@ -36,6 +38,7 @@ app.get('/products', (req, res) =>{
             description: 'T-shirt - Rick and Morty',
             size: 'PP-P',
             title: 'T-shirt',
+            id: '2'
         },
 
         {
@@ -44,9 +47,20 @@ app.get('/products', (req, res) =>{
             description: 'Jeans pants - Skinny',
             size: '54',
             title: 'Jeans',
+            id: '3'
         },
     ]
 
+    app.get('/products/:id', (req, res) =>{
+        
+        const product = products[parseInt(req.params.id) -1 ]
+
+        res.render('products', {product})
+    })
+    
+    
+
+    
     res.render('blogapp', {products});
 })
 

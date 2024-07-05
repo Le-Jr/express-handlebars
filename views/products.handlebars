@@ -1,6 +1,6 @@
+{{#with product}}
 
-
-<div class="grid">
+   <div class="grid flex">
     <div class="container">
         <img src="{{this.img}}" alt="">
         <h1 class="title">
@@ -16,6 +16,10 @@
         <p class="description">
             Description:{{this.description}}
         </p>
-        <a href="../products/{{this.id}}"><button class="produto">Acessar produto</button></a>
+    
     </div>
+    <a href="/products"><button class="voltar">Voltar</button></a>
 </div>
+
+
+{{/with}}

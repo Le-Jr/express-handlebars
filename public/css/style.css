@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
     margin: 0;
@@ -27,7 +28,7 @@ div.container{
     border-radius: 10px;
 
     width: 200px;
-    height: 350px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center ;
@@ -39,6 +40,14 @@ div.container{
 
 div.container:hover{
     box-shadow: 1px 1px 20px rgb(0, 12, 69);
+    height: 470px
+}
+
+div.home{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 
@@ -53,4 +62,51 @@ img{
 
 .title{
     font-size: 25px;
+}
+
+button{
+    width: 300px;
+    height: 80px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    transition: ease-in-out;
+    transition-duration: 400ms;
+    font-size: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+button:hover{
+    box-shadow: 1px 1px 20px rgb(0, 12, 69);
+    background-color: rgb(241, 238, 238);
+    height: 100px; 
+    cursor: pointer; 
+}
+
+h1{
+    font-size: 30px;
+}
+.produto{
+    width: 200px;
+    background-color: rgb(0, 72, 255);
+    color: white;
+    border-radius: 5px;
+}
+
+.produto:hover{
+    box-shadow: 1px 1px 10px rgb(6, 0, 66);
+    background-color: rgb(33, 0, 244);
+    height: 100px;
+}
+
+.voltar{
+    margin-top: 0.5rem;
+    text-align: center;
+    width: 150px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
